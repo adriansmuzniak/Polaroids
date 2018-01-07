@@ -10,7 +10,7 @@ var nextButton = $(".next");
 var prevButton = $(".prev");
 var counter = null;
 
-images.on("click", function () {
+images.on("click", function (event) {
     var imgUrl = $(event.target).attr("src");
     counter = images.index(this);
     images.css("z-index", "1")
