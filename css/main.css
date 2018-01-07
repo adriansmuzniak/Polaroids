@@ -162,8 +162,8 @@ body {
 .close {
     color: white;
     position: absolute;
-    top: 0px;
-    right: 15px;
+    top: -2%;
+    right: 20px;
     font-size: 45px;
     font-weight: bold;
     z-index: 1;
