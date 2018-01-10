@@ -1,3 +1,7 @@
+$(window).on("load", function () {
+                $("#loader-wrapper").fadeOut();
+    });
+
 $(document).ready(function() {
 var imagesLibrary = ["img/pic0001.jpg", "img/pic0002.jpg", "img/pic0003.jpg", "img/pic0004.jpg", "img/pic0005.jpg", "img/pic0006.jpg", "img/pic0007.jpg", "img/pic0008.jpg", "img/pic0009.jpg", "img/pic0010.jpg", "img/pic0011.jpg", "img/pic0012.jpg", "img/pic0013.jpg", "img/pic0014.jpg", "img/pic0015.jpg", "img/pic0016.jpg", ];
     
