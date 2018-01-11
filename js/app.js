@@ -1,7 +1,7 @@
 $(window).on("load", function () {
-    setTimeout(() => {
+    // setTimeout(() => {
         $("#loader-wrapper").fadeOut();
-    }, 300000);
+    // }, 300000);
     });
 
 $(document).ready(function() {
