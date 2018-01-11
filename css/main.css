@@ -20,24 +20,376 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    /* background: black; */
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    /* background: hsla(305, 48%, 71%, 0.973); */
+   background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+
     width: 100%;
     height: 100%;
     /* display: none; */
 }
 
-.load {
-    background: url("../img/spinner2.gif") no-repeat;
-    background-size: contain;
+@-webkit-keyframes colors {
+    0% {
+        background: #af298a;
+    }
+    7% {
+        background: #af298a;
+    }
+    14% {
+        background: #e35b02;
+    }
+    21% {
+        background: #e35b02;
+    }
+    28% {
+        background: #59b101;
+    }
+    35% {
+        background: #59b101;
+    }
+    42% {
+        background: #e39f02;
+    }
+    49% {
+        background: #e39f02;
+    }
+    56% {
+        background: #d70f37;
+    }
+    63% {
+        background: #d70f37;
+    }
+    70% {
+        background: #2141c6;
+    }
+    77% {
+        background: #2141c6;
+    }
+    84% {
+        background: #0f9bd7;
+    }
+    91% {
+        background: #0f9bd7;
+    }
+    100% {
+        background: #af298a;
+    }
+}
+
+@-webkit-keyframes block1 {
+    0% {
+        left: 8px;
+        top: 0;
+    }
+    24% {
+        left: 8px;
+        top: 0;
+    }
+    28% {
+        left: 24px;
+        top: 0;
+    }
+    35% {
+        left: 24px;
+        top: 0;
+    }
+    42% {
+        left: 16px;
+        top: 0;
+    }
+    49% {
+        left: 16px;
+        top: 0;
+    }
+    56% {
+        left: 8px;
+        top: 0;
+    }
+    77% {
+        left: 8px;
+        top: 0;
+    }
+    81% {
+        left: 0;
+        top: 0;
+    }
+    84% {
+        left: 0;
+        top: 8px;
+    }
+    91% {
+        left: 0;
+        top: 8px;
+    }
+    95% {
+        left: 0;
+        top: 0;
+    }
+    100% {
+        left: 8px;
+        top: 0;
+    }
+}
+
+@-webkit-keyframes block2 {
+    0% {
+        left: 24px;
+        top: 0;
+    }
+    21% {
+        left: 24px;
+        top: 0;
+    }
+    25% {
+        left: 24px;
+        top: 16px;
+    }
+    35% {
+        left: 24px;
+        top: 16px;
+    }
+    42% {
+        left: 32px;
+        top: 16px;
+    }
+    49% {
+        left: 32px;
+        top: 16px;
+    }
+    56% {
+        left: 40px;
+        top: 16px;
+    }
+    77% {
+        left: 40px;
+        top: 16px;
+    }
+    81% {
+        left: 48px;
+        top: 16px;
+    }
+    84% {
+        left: 48px;
+        top: 8px;
+    }
+    91% {
+        left: 48px;
+        top: 8px;
+    }
+    95% {
+        left: 48px;
+        top: 0;
+    }
+    100% {
+        left: 40px;
+        top: 0;
+    }
+}
+
+@-webkit-keyframes block3 {
+    0% {
+        left: 40px;
+        top: 0;
+    }
+    35% {
+        left: 40px;
+        top: 0;
+    }
+    42% {
+        left: 32px;
+        top: 0;
+    }
+    49% {
+        left: 32px;
+        top: 0;
+    }
+    56% {
+        left: 24px;
+        top: 0;
+    }
+    66% {
+        left: 24px;
+        top: 0;
+    }
+    70% {
+        left: 24px;
+        top: 16px;
+    }
+    77% {
+        left: 24px;
+        top: 16px;
+    }
+    81% {
+        left: 32px;
+        top: 16px;
+    }
+    84% {
+        left: 32px;
+        top: 8px;
+    }
+    91% {
+        left: 32px;
+        top: 8px;
+    }
+    95% {
+        left: 32px;
+        top: 16px;
+    }
+    100% {
+        left: 24px;
+        top: 16px;
+    }
+}
+
+@-webkit-keyframes block4 {
+    0% {
+        left: 24px;
+        top: 16px;
+    }
+    7% {
+        left: 24px;
+        top: 16px;
+    }
+    14% {
+        left: 8px;
+        top: 16px;
+    }
+    35% {
+        left: 8px;
+        top: 16px;
+    }
+    42% {
+        left: 16px;
+        top: 16px;
+    }
+    49% {
+        left: 16px;
+        top: 16px;
+    }
+    56% {
+        left: 24px;
+        top: 16px;
+    }
+    63% {
+        left: 24px;
+        top: 16px;
+    }
+    67% {
+        left: 8px;
+        top: 16px;
+    }
+    77% {
+        left: 8px;
+        top: 16px;
+    }
+    81% {
+        left: 16px;
+        top: 16px;
+    }
+    84% {
+        left: 16px;
+        top: 8px;
+    }
+    91% {
+        left: 16px;
+        top: 8px;
+    }
+    95% {
+        left: 16px;
+        top: 0;
+    }
+    100% {
+        left: 24px;
+        top: 0;
+    }
+}
+
+.tetris {
+    margin: 0!important;
     position: absolute;
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    /* display: none; */
+    display: block;
+    width: 64px;
+    height: 32px;
+    margin: 32px auto;
 }
+
+.block1,
+.block2,
+.block3,
+.block4 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #af298a;
+    box-shadow: inset 0 0 0 4px rgba(0, 0, 0, .1);
+}
+
+.block1:before,
+.block2:before,
+.block3:before,
+.block4:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 2px;
+    height: 3px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.block1 {
+    left: 8px;
+    top: 0;
+    -webkit-animation: block1 5s infinite linear, colors 5s infinite linear;
+}
+
+.block2 {
+    left: 24px;
+    top: 0;
+    -webkit-animation: block2 5s infinite linear, colors 5s infinite linear;
+}
+
+.block3 {
+    left: 40px;
+    top: 0;
+    -webkit-animation: block3 5s infinite linear, colors 5s infinite linear;
+}
+
+.block4 {
+    left: 24px;
+    top: 16px;
+    -webkit-animation: block4 5s infinite linear, colors 5s infinite linear;
+}
+
+.load {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 60px;
+    height: 60px;
+    border-top: 12px solid rgba(243, 74, 83, 0.2);
+    border-right: 12px solid rgba(243, 74, 83, 0.2);
+    border-bottom: 12px solid rgba(243, 74, 83, 0.2);
+    border-left: 12px solid #F34A53;
+    animation: animation 0.7s infinite linear;
+    /* display: none; */
+    border-radius: 50%;
+}
+
+/* @keyframes animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
 
 .polaroid-pictures {
     height: 100vh;
