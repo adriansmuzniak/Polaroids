@@ -16,18 +16,33 @@ images.on("click", function (event) {
     images.css("z-index", "1")
     modalContent2.css("background-image", "url(" + imgUrl + ")")
     myModal.css("display", "block");
+    
+    
     // --------------------------------------
+    // -------------------------------------------
+    closeButton.on("click", function (e) {
+        e.preventDefault();
+        myModal.slideUp(300);
+    });
+    // -------------------------------------------
+    $(myModal).click(function (event){
+        if (!$(event.target).closest(modalContent).length && !$(event.target).is(modalContent)) {
+            myModal.slideUp(300)
+        }
+    })
+});
     nextButton.on("click", function () {
         modalContent2.stop().animate({ opacity: 0 }, 100, function () {
             modalContent2.css("background-image", "url(" + imagesLibrary[counter] + ")")
-            .animate({ opacity: 1 }, { duration: 50 });        
+            .animate({ opacity: 1 }, { duration: 50 });
+            console.log(counter)
         })
         counter++;
         if (counter >= imagesLibrary.length) {
             counter = 0;
         }
-    })
-    // -----------------------------------------
+})
+// -----------------------------------------
     prevButton.on("click", function () {
         modalContent2.stop().animate({ opacity: 0 }, 100, function () {
             modalContent2.css("background-image", "url(" + imagesLibrary[counter] + ")")
@@ -36,18 +51,6 @@ images.on("click", function (event) {
         counter--;
         if (counter == -1) {
             counter = imagesLibrary.length - 1;
-        }
-    })
-    // -------------------------------------------
-    closeButton.on("click", function (e) {
-            e.preventDefault();
-            myModal.slideUp(300);
-        });
-    // -------------------------------------------
-    $(myModal).click(function (event){
-        if (!$(event.target).closest(modalContent).length && !$(event.target).is(modalContent)) {
-            myModal.slideUp(300)
-            }
-        })
-    });
+    }
+})
 });
