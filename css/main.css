@@ -368,22 +368,6 @@ body {
     -webkit-animation: block4 5s infinite linear, colors 5s infinite linear;
 }
 
-.load {
-    margin: 0 auto;
-    position: relative;
-    top: 50%;
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    width: 60px;
-    height: 60px;
-    border-top: 12px solid rgba(243, 74, 83, 0.2);
-    border-right: 12px solid rgba(243, 74, 83, 0.2);
-    border-bottom: 12px solid rgba(243, 74, 83, 0.2);
-    border-left: 12px solid #F34A53;
-    animation: animation 0.7s infinite linear;
-    /* display: none; */
-    border-radius: 50%;
-}
 
 #preloader {
     position: fixed;
@@ -406,6 +390,7 @@ body {
     -webkit-animation: spin 2s linear infinite;
     animation: spin 1.5s linear infinite;
 }
+
 #loader:before {
     content: "";
     position: absolute;
@@ -432,6 +417,23 @@ body {
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1s linear infinite;
 }
+.load {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 60px;
+    height: 60px;
+    border-top: 12px solid rgba(243, 74, 83, 0.2);
+    border-right: 12px solid rgba(243, 74, 83, 0.2);
+    border-bottom: 12px solid rgba(243, 74, 83, 0.2);
+    border-left: 12px solid #F34A53;
+    animation: animation 0.7s infinite linear;
+    /* display: none; */
+    border-radius: 50%;
+}
+
 @-webkit-keyframes spin {
     0%   {
         -webkit-transform: rotate(0deg);
